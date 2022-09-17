@@ -10,10 +10,16 @@ INC_DIR = inc
 SRC_DIR = src
 LIB_DIR = lib
 BIN_DIR = bin
+TST_DIR = test
 VND_DIR = vendor
 DOC_DIR = docs
 MAN_DIR = man
-TST_DIR = test
+
+# sets the source languages
+LANGS =
+LANG_HEADER_EXTS =
+LANG_SOURCE_EXTS =
+
 
 # name of the main library without prefixes or extensions
 LIB_NAME =
