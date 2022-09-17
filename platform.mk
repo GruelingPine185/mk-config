@@ -11,20 +11,24 @@ else ifneq ($(or $(USING_C), $(USING_OBJC)), )
 CC = clang
 COMPILER = $(CC)
 endif # USING_CPP || USING_OBJCPP
+else
+ifeq ($(USING_CPP))
+CXX = g++
+COMPILER = $(CXX)
+else
+CC = gcc
+COMPILER = $(CC)
+endif # USING_CPP || USING_C
 endif # Darwin
 
 ifeq ($(OSNAME), Linux)
 PlATFORM = LINUX
 LIB_EXT = so
-CXX = g++
-CC = gcc
 endif # Linux
 
 ifeq ($(OS), Windows_NT)
 PLATFORM = WINDOWS
 LIB_EXT = dll
-CXX = g++
-CC = gcc
 endif # Windows_NT
 
 C_DEFS += -D$(PLATFORM)
