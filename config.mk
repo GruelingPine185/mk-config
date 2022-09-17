@@ -59,3 +59,19 @@ C_FLAGS = $(C_STD) $(C_OPT) $(C_WARN)
 
 # C++ compiler
 CXX =
+# C++ language version
+CXX_STD =
+# the C++ compiler optimization flag
+CXX_OPT =
+# space-separated warnings the C++ compiler will invoke
+CXX_WARN = -Wall -Wextra -pedantic
+# space-separated C++ preprocessor defines
+CXX_DEFS =
+# space-separate include paths
+CXX_INCLUDES = -I$(INC_DIR)
+# space-separated libraries to link to PROGRAM (e.g -lbase)
+CXX_LIBS =
+# space-sepatated paths to the libraries provided in CXX_LIBS
+CXX_LIB_PATHS =
+# the flags passed to C++ compiler
+CXX_FLAGS = $(CXX_STD) $(CXX_OPT) $(CXX_WARN)
