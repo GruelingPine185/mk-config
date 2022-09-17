@@ -18,10 +18,15 @@ MAN_DIR = man
 # sets the source languages: C, C++, OBJC, OBJC++
 # multiple languages should be delimited by spaces
 LANGS =
-# list of extension for the source languages
+# extension for the source languages
 LANG_HEADER_EXTS =
-# list of extension for the source languages
+# extension for the source languages
 LANG_SOURCE_EXTS =
+
+USING_C =
+USING_CPP =
+USING_OBJC =
+USING_OBJCPP =
 
 # name of the main library without prefixes or extensions
 LIB_NAME =

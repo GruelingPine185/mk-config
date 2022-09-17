@@ -1,19 +1,15 @@
 ifneq ($(findstring C, $(LANGS)), )
-LANG_HEADER_EXTS += h
-LANG_SOURCE_EXTS += c
+USING_C = 1
 endif # C
 
-ifneq ($(findstring C++, $(LANGS)), )
-LANG_HEADER_EXTS += hpp hh
-LANG_SOURCE_EXTS += cpp cc
-endif # C++
+ifneq ($(findstring CPP, $(LANGS)), )
+USING_CPP = 1
+endif # CPP
 
 ifneq ($(findstring OBJC, $(LANGS)), )
-LANG_HEADER_EXTS += h
-LANG_SOURCE_EXTS += m
+USING_OBJC = 1
 endif # OBJC
 
-ifneq ($(findstring OBJC++, $(LANGS)), )
-LANG_HEADER_EXTS += hh
-LANG_SOURCE_EXTS += mm
-endif # OBJC++
+ifneq ($(findstring OBJCPP, $(LANGS)), )
+USING_OBJCPP = 1
+endif # OBJCPP

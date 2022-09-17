@@ -4,6 +4,13 @@ OSNAME = $(shell uname -s)
 ifeq ($(OSNAME), Darwin)
 PLATFORM = OSX
 LIB_EXT = dylib
+ifneq ($(or $(USING_CPP), $(USING_OBJCPP)), )
+CXX = clang++
+COMPILER = $(CXX)
+else ifneq ($(or $(USING_C), $(USING_OBJC)), )
+CC = clang
+COMPILER = $(CC)
+endif # USING_CPP || USING_OBJCPP
 endif # Darwin
 
 ifeq ($(OSNAME), Linux)
