@@ -15,11 +15,13 @@ VND_DIR = vendor
 DOC_DIR = docs
 MAN_DIR = man
 
-# sets the source languages
+# sets the source languages: C, C++, OBJC, OBJC++
+# multiple languages should be delimited by spaces
 LANGS =
+# list of extension for the source languages
 LANG_HEADER_EXTS =
+# list of extension for the source languages
 LANG_SOURCE_EXTS =
-
 
 # name of the main library without prefixes or extensions
 LIB_NAME =
