@@ -8,6 +8,7 @@ PLATFORM =
 # paths
 INC_DIR = inc
 SRC_DIR = src
+UTL_DIR = utils
 LIB_DIR = lib
 BIN_DIR = bin
 TST_DIR = test
@@ -15,15 +16,23 @@ VND_DIR = vendor
 DOC_DIR = docs
 MAN_DIR = man
 
-# extension for the source languages
-LANG_HEADER_EXTS =
-# extension for the source languages
-LANG_SOURCE_EXTS =
-
+# language flags
 USING_C =
 USING_CPP =
 USING_OBJC =
 USING_OBJCPP =
+
+# sources
+C_HEADERS =
+C_SOURCES =
+CPP_HEADERS =
+CPP_SOURCES =
+OBJC_HEADERS =
+OBJC_SOURCES =
+OBJCPP_HEADERS =
+OBJCPP_SOURCES =
+
+FRAMEWORKS =
 
 # name of the main library without prefixes or extensions
 LIB_NAME =
