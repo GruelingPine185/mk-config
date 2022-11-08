@@ -5,16 +5,16 @@ ifeq ($(OSNAME), Darwin)
 PLATFORM = OSX
 LIB_EXT = dylib
 ifneq ($(or $(USING_CPP), $(USING_OBJCPP)), )
-CXX = clang++
-COMPILER = $(CXX)
+CPP = clang++
+COMPILER = $(CPP)
 else ifneq ($(or $(USING_C), $(USING_OBJC)), )
 CC = clang
 COMPILER = $(CC)
 endif # USING_CPP || USING_OBJCPP
 else
 ifeq ($(USING_CPP))
-CXX = g++
-COMPILER = $(CXX)
+CPP = g++
+COMPILER = $(CPP)
 else
 CC = gcc
 COMPILER = $(CC)
